@@ -1,0 +1,153 @@
+﻿<DocInternals>
+  <AlwaysLoose>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+    <bool>false</bool>
+  </AlwaysLoose>
+  <FieldSrcTables>
+    <String>6</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>7</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>8</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>9</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>10</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>11</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>12</String>
+    <String>1</String>
+    <String>Team</String>
+    <String>13</String>
+    <String>1</String>
+    <String>Team</String>
+  </FieldSrcTables>
+  <TableViewData>
+    <Pos></Pos>
+    <CtlInfo>
+      <InternalView>
+        <Tables>
+          <TableViewTableWinSaveInfo>
+            <Pos>
+              <Left>1522</Left>
+              <Top>708</Top>
+              <Width>157</Width>
+              <Height>172</Height>
+            </Pos>
+            <Caption>Team</Caption>
+          </TableViewTableWinSaveInfo>
+        </Tables>
+        <BroomPoints></BroomPoints>
+        <ConnectionPoints></ConnectionPoints>
+        <ZoomFactor>3FF0000000000000</ZoomFactor>
+      </InternalView>
+      <SourceView></SourceView>
+    </CtlInfo>
+    <Mode>0</Mode>
+  </TableViewData>
+  <Bookmarks></Bookmarks>
+  <SavedByVersion>12.10.0.0</SavedByVersion>
+  <ForceBackEndMacroExecution>false</ForceBackEndMacroExecution>
+  <FieldTags>
+    <ScriptBased>
+      <FieldTagData>
+        <Tag>$key</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$hidden</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>$Info</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$system</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>$Info</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$ascii</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Info</String>
+          <String>Team Employee Name 01</String>
+          <String>Team Employee Name 02</String>
+          <String>Team Employee Name 03</String>
+          <String>Manager</String>
+          <String>Employee Hierarchy</String>
+          <String>Employee Name</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$text</Tag>
+        <FieldNames>
+          <String>$Field</String>
+          <String>$Table</String>
+          <String>$Info</String>
+          <String>Team Employee Name 01</String>
+          <String>Team Employee Name 02</String>
+          <String>Team Employee Name 03</String>
+          <String>Manager</String>
+          <String>Employee Hierarchy</String>
+          <String>Employee Name</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$numeric</Tag>
+        <FieldNames>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>Employee ID</String>
+          <String>Reports To</String>
+        </FieldNames>
+      </FieldTagData>
+      <FieldTagData>
+        <Tag>$integer</Tag>
+        <FieldNames>
+          <String>$Rows</String>
+          <String>$Fields</String>
+          <String>$FieldNo</String>
+          <String>Employee ID</String>
+          <String>Reports To</String>
+        </FieldNames>
+      </FieldTagData>
+    </ScriptBased>
+    <Interactive></Interactive>
+  </FieldTags>
+  <FieldComments></FieldComments>
+  <TableComments></TableComments>
+  <CreatePrjFolder>false</CreatePrjFolder>
+  <LinkedTables></LinkedTables>
+  <AppObjectEntries></AppObjectEntries>
+  <GenericDimensions></GenericDimensions>
+  <GenericMeasures></GenericMeasures>
+  <GenericBookmarks></GenericBookmarks>
+  <ConnectionInfo></ConnectionInfo>
+  <GenericDerivedDefinitions></GenericDerivedDefinitions>
+  <GenericDerivedFields></GenericDerivedFields>
+</DocInternals>

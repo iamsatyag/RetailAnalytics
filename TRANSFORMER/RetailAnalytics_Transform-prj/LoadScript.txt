@@ -1,0 +1,51 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='£#,##0.00;-£#,##0.00';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='DD-MMM-YYYY';
+SET TimestampFormat='DD-MMM-YYYY hh:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=0;
+SET ReferenceDay=4;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-GB';
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+///$tab CONFIG
+LET vAppName				= 	'Retail Analytics';
+
+LET vAppRootPath			= 	'C:\Development\RetailAnalytics\';
+
+LET vAppMetadataPath		=	'..\METADATA\RetailAnalytics_Metadata.xlsx';
+///$tab Mapping Load(s)
+Map_Employee_Rename:
+Mapping LOAD 
+	OldName			AS		Map_Employee_Key,
+	NewName			AS		Map_Employee_Value
+FROM
+[$(vAppMetadataPath)]
+(ooxml, embedded labels, table is Rename_Fields);
+
+///$tab RenameFields
+Team:
+LOAD 
+	[Employee Name1], 
+	[Employee Name2], 
+	[Employee Name3]		AS			[Employee Name3], 
+	Manager, 
+	[Employee Hierarchy], 
+	[Employee ID], 
+	[Reports To], 
+	[Employee Name]
+FROM
+[..\DATA\Extract\Teams.qvd]
+(qvd);
+
+//Exit Script;
+
+RENAME Field using Map_Employee_Rename;
